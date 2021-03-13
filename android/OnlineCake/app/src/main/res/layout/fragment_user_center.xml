@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/user_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/photo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尊敬的会员"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="我的工具"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/info"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:text="个人信息" />
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/user_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/likeicon"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:text="我的点赞" />
+
+        <TextView
+            android:id="@+id/user_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/comment"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:text="我的订单" />
+
+    </LinearLayout>
+</LinearLayout>
